@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataviz.io</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="view" id="main-view" style="display:none">
+    <div class="header">
+        <div class="othercontents">
+            <h1>dataviz.io</h1>
+            <button class="nav-buttons" id="signin">Login</button>
+        </div>
+        <div class="settings-button-div" id="settings-from-mainview">
+            <button class="image-button" id="mainview-settings">
+                <img src="images/settings-icon.png" class="settings-icon" alt="Settings" width="50" height="50">
+            </button>
+        </div>
+    </div>
+
+    <div id="drop-div">
+        <p>Drop your .csv file here.</p>
+    </div>
+    <div id="input-div">
+        <input type="text" id="prompt-input" placeholder="Enter your question here">
+        <button id="circle-button">→</button>
+    </div>
+</div>
+<div class="view" id="login-view" style="display:none">
+    <div class="header1">
+        <h1>dataviz.io</h1>
+        <button class="nav-buttons" id="signup">No account? Sign up.</button>
+    </div>
+    <div id="login-text-box-location">
+        <p id="login-title">Login</p>
+        <input type="text" class='login-text-boxes' id="username-input" placeholder="Username" />
+        <input type="text" class="login-text-boxes" id="password-input" placeholder="Password" />
+        <div id="login-buttons">
+            <button id="login-button">Login</button>
+            <button id="restore-cred">Restore Login info</button>
+            <button id="clear-cred">Clear Login Info</button>
+            <button class="socials-login" id="google-login">G</button>
+            <button class="socials-login" id="twitter-login">X</button>
+        </div>
+    </div>
+</div>
+<div class="view" id="signup-view" style="display:none">
+    <div class="header">
+        <h1>dataviz.io</h1>
+        <button class="nav-buttons" id="back">Back to login</button>
+    </div>
+    <div id="signup-text-box-location">
+        <p id="signin-title">Sign up</p>
+        <input type="text" class='signup-text-boxes' id="email-signup" placeholder="Email" />
+        <input type="text" class='signup-text-boxes' id="username-signup" placeholder="Username" />
+        <input type="password" class="signup-text-boxes" id="password-signup" placeholder="Password" />
+        <div id="signup-buttons">
+            <button id="signup-button">Sign up</button>
+            <button id="restore-cred-signup">Restore Sign up info</button>
+            <button id="clear-cred-signup">Clear Sign up Info</button>
+        </div>
+    </div>
+</div>
+<div class="view" id="data-view" style="display:none">
+    <div class="header" id="data-header">
+        <div class="othercontents">
+            <h1>dataviz.io</h1>
+            <button class="nav-buttons" id="back-to-login">Login</button>
+        </div>
+        <div class="settings-button-div" id="settings-from-dataview">
+            <button class="image-button" id="dataview-settings">
+                <img src="images/settings-icon.png" class="settings-icon" alt="Settings" width="50" height="50">
+            </button>
+        </div>
+    </div>
+    <div id="view-of-data">
+        <p id="queryDisplay"></p>
+        <h3>Your data will be visualized here. COMING SOON</h3>
+        <button class="nav-buttons" id="data-view-to-main-view">Back to main view</button>
+    </div>
+</div>
+<div class="view" id="settings-screen" style="display:none">
+    <div class="header">
+        <h1>dataviz.io</h1>
+    </div>
+    <div id="view-of-settings">
+        <p id="queryDisplay"></p>
+        <h3>Settings</h3>
+        <button class="nav-buttons" id="dark-mode">Dark Mode -- ON!</button>
+        <button class="nav-buttons" id="account-settings">Account Settings</button>
+        <button class="nav-buttons" id="notifs">Notifications -- OFF!</button>
+        <button class="nav-buttons" id="restrict-sources">Restrict data sources</button>
+        <button class="nav-buttons" id="settings-view-to-main-view">Back</button>
+    </div>
+</div>
+<div class="view" id="account-view" style="display:none">
+    <div class="header">
+        <h1>dataviz.io</h1>
+    </div>
+    <div id="view-of-account">
+        <h3>Account Settings</h3>
+        <p id="user-email"></p>
+        <p id="user-username"></p>
+        <button class="nav-buttons" id="change_email">Change Email</button>
+        <button class="nav-buttons" id="change-username">Change Username</button>
+        <button class="nav-buttons" id="change-pwd">Change Password</button>
+        <button class="nav-buttons" id="account-to-settings">Back to Settings</button>
+    </div>
+</div>
+</body>
+</html>

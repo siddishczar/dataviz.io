@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'robo';
+    src: url('Roboto-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(52, 52, 52);
+    font-family: 'robo', sans-serif;
+}
+
+
+h1 {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+p {
+    color: whitesmoke;
+}
+
+
+#drop-div {
+    display: grid;
+    place-items: center;
+    position: fixed; 
+    top: 15%; 
+    left: 50%; 
+    align-items: center;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 500px;
+    max-width: 800px; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center;
+    z-index: 1;
+}
+
+
+#drop-div:hover {
+    background-color:rgb(67, 67, 67);
+}
+
+#input-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+#prompt-input {
+    display: aboslute;
+    flex-direction: row;
+    background-color:rgb(104, 104, 104);
+    color:aliceblue;
+    width: 75%;
+    height: 20px;
+    line-height: normal;
+    padding: 15px 2px 15px 40px;
+    border: none;
+    font-size: 1.25rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#circle-button {
+    position: flex;
+    top: 50%;
+    right: 250px;
+    justify-content: center;
+    align-items: center;
+    /*padding: 10px;*/
+    padding-left: 0%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #a5a5a5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin-left: 15px;
+    right: 10px;
+}
+
+#circle-button:hover{
+    background-color:rgb(0, 117, 234);
+}
+
+#login-text-box-location, #signup-text-box-location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    max-width: 100%;
+    gap: 10px;
+}
+
+.login-text-boxes, .signup-text-boxes {
+    background-color:rgb(104, 104, 104);
+    width: 70%;
+    height: 30px;
+    border: none;
+    padding: 10px;
+}
+
+#login-button, #restore-cred, #clear-cred, #signup-button, #restore-cred-signup, #clear-cred-signup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:#565656;
+    color:rgb(140, 140, 140);
+    border: none;
+    height: 40px;
+    width: 80px;
+}
+
+#login-button, #signup-button {
+    padding: 20px 20px 20px 25px;
+}
+
+#login-button:hover, #restore-cred:hover, #clear-cred:hover, #signup-button:hover, #restore-cred-signup:hover, #clear-cred-signup:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#login-buttons, #signup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.socials-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 10px 10px 10px;
+    width: 40px;
+    height: 40px;
+    background-color:#565656;
+    color:rgb(140, 140, 140);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+#google-login:hover {
+    background-color: rgb(206, 111, 111);
+    color: whitesmoke;
+}
+
+#twitter-login:hover {
+    background-color: rgb(16, 16, 16);
+    color: whitesmoke;
+}
+
+#login-title {
+    font-family: 'robo', sans-serif;
+    font-size: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(52, 52, 52);
+    width: 100vw;
+    padding-right: 0 50px;
+} 
+
+.header1 {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(52, 52, 52);
+    width: 100vw;
+    padding-right: 0 50px;
+} 
+
+.othercontents {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    width: 20%;
+    flex-direction: row;
+    background-color: rgb(52, 52, 52);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.settings-button-div {
+    position: absolute;
+    right: 0;
+    justify-content: flex-end;
+    padding-left: 100px;
+    right: 20px;
+}
+
+.image-button{
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    background-color: rgb(52, 52, 52);
+    border: none;
+}
+
+.settings-icon {
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+.nav-buttons {
+    display: flex;
+    float: right;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    font-family: 'robo', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.nav-buttons:hover {
+    background-color: #515151;
+}
+
+#view-of-data, #view-of-settings, #view-of-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    max-width: 100%;
+    gap: 10px;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+#back-to-login {
+    padding-left: 20px;
+}
+
