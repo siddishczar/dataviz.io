@@ -39,11 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
     
             try {
-                // Retrieve all documents from the database
                 const result = await db.allDocs({ include_docs: true });
                 let isValid = false;
-    
-                // Iterate through all documents to find a match
                 for (const row of result.rows) {
                     const doc = row.doc;
                     if (doc.savedUsername === username && doc.savedPassword === pwd) {
@@ -61,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             } catch (e) {
                 alert("Error retrieving documents.");
-                console.error(e); // Log the error for debugging
+                console.error(e);
                 return false;
             }
         } catch (e) {
             alert("An unexpected error occurred.");
-            console.error(e); // Log the error for debugging
+            console.error(e); 
             return false;
         }
     }
