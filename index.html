@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
     <script type="module" src="fred.js"></script>
+    <script type="module" src="openai.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.16.0/dist/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js"></script>
 </head>
 <body>
@@ -82,8 +83,9 @@
     </div>
     <div id="view-of-data">
         <p id="queryDisplay"></p>
+        <p id="testingP"></p>
         <!--<p id="aiAnswer"></p>-->
-        <h3>Your data will be visualized here. COMING SOON</h3>
+        <h3 id="testQuery">Your data will be visualized here. COMING SOON</h3>
         <canvas id="resultChart"></canvas>
         <script>
 
