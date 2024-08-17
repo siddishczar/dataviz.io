@@ -32,9 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('graphType', splitArray[1]);
         localStorage.setItem('x-axis', splitArray[2]);
         localStorage.setItem('y-axis', splitArray[3]);
-
-        // Display the raw JSON response in the testQuery element
-        testQuery.textContent = JSON.stringify(data.response, null, 2); // Pretty print with 2 spaces indentation
+          
+        testQuery.textContent = JSON.stringify(data.response, null, 2);
   
       } catch (error) {
             console.error('Error:', error);
